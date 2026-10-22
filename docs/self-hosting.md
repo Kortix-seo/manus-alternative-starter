@@ -7,7 +7,7 @@ Kortix is the open-source AI Operating System, and a self-hosted instance is the
 - A Linux server with a public IP. The CLI runs on Linux and macOS, on x86_64 and arm64.
 - DNS: A or AAAA records for `<domain>` and `api.<domain>`, both pointed at the server before the first start. Add a wildcard `*.p.<domain>` for sandbox previews.
 - Ports 80 and 443 open inbound.
-- A sandbox provider key for Daytona, Platinum, or E2B. Without one, sessions do not start.
+- A sandbox provider key for Platinum or the legacy Daytona fallback. Without one, sessions do not start.
 - A model provider key. You add it in the web app after the first sign-in.
 
 ## Install the open-source stack
@@ -29,7 +29,7 @@ kortix self-host start
 1. Reachability: domain mode with the domain, API subdomain, and ACME email, or tunnel mode.
 2. Admin email: the platform admins, comma-separated.
 3. Restrict account creation: on by default.
-4. Sandbox provider: `daytona`, `platinum`, or `e2b`, plus that provider's key.
+4. Sandbox provider: `platinum`, or `daytona` as the legacy fallback, plus that provider's key.
 5. Preview origins: `p.<domain>`, which needs the wildcard record.
 
 Run `kortix self-host start` to apply the answers.
@@ -63,7 +63,7 @@ kortix self-host doctor
 | `supabase-*` | Postgres, auth, storage, and the rest of the Supabase distribution. |
 | `caddy` | Terminates TLS on ports 80 and 443 in domain mode. |
 
-Sandboxes are off the box. Every session runs on Daytona, Platinum, or E2B, created with your provider key, and calls back to the instance's public API URL. The images are `kortix/kortix-frontend`, `kortix/kortix-api`, and `kortix/kortix-gateway` on Docker Hub.
+Sandboxes are off the box. Every session runs on Platinum or the legacy Daytona fallback, created with your provider key, and calls back to the instance's public API URL. The images are `kortix/kortix-frontend`, `kortix/kortix-api`, and `kortix/kortix-gateway` on Docker Hub.
 
 ## Evaluate on your own machine
 
