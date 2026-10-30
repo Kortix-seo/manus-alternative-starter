@@ -1,8 +1,8 @@
-# Kortix is the open-source AI Operating System
+# Kortix is the open-source CompanyOS
 
 **A runnable Manus alternative for the research-and-draft work teams hand to a hosted agent.**
 
-Kortix is the open-source AI Operating System, and this repository is a runnable Manus alternative for the research-and-draft work teams hand to a hosted agent. It is a project you clone, ship, and own: one agent that searches the web, reads the sources it finds, drafts a brief with citations, and opens a change request for a person to approve.
+Kortix is the open-source CompanyOS, and this repository is a runnable Manus alternative for the research-and-draft work teams hand to a hosted agent. It is a project you clone, ship, and own: one agent that searches the web, reads the sources it finds, drafts a brief with citations, and opens a change request for a person to approve.
 
 Manus is a hosted agent that runs in Manus's own product ([Manus](https://manus.im), checked October 2026). A developer who searches for a Manus alternative is asking what the team will own after the trial. In this starter the agent, the skill that shapes its brief, the connector declarations, and the trigger are all text in a git repo you control.
 
