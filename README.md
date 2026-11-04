@@ -83,7 +83,7 @@ The full walkthrough is in [docs/setup.md](docs/setup.md).
 
 ## Links
 
-- [Kortix on GitHub](https://github.com/kortix-ai/suna)
+- [Kortix on GitHub](https://github.com/kortix-ai/CompanyOS)
 - [Try Kortix](https://kortix.com)
 - [Open-source Manus alternatives](https://kortix.com/blog/open-source-manus-alternatives)
 
